@@ -6,16 +6,14 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) {
         LinkedList<String> names = new LinkedList<String>();
-        names.add("Queue");
-        names.add("Caleb");
-        names.add("Sue");
-        names.add("Sally");
-        names.add("Stack");
+        names.push("Caleb");
+        names.push("Sue");
+        names.push("Sally");
 
-        System.out.println(names.remove()); // use linked list as a queue
-
-        System.out.println(names.removeLast()); // use linked list as a stack
+        System.out.println(names.pop());
+        System.out.println(names.pop());
+        System.out.println(names.pop());
     }
 }
