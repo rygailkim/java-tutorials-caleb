@@ -2,11 +2,22 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello World");
 
         Scanner in = new Scanner(System.in);
-        String s = in.nextLine();
+        System.out.println("Enter size: ");
+        int size = in.nextInt();
 
-        System.out.println(s);
+        int[] grades = new int[size];
+
+        System.out.println("Enter " + size + " numbers:");
+        for(int i = 0; i < size; i++) {
+            grades[i] = in.nextInt();
+        }
+
+        in.close();
+
+        for(int i = 0; i < size; i++) {
+            System.out.println(grades[i]);
+        }
     }
 }
